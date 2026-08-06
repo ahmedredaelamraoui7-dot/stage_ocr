@@ -31,6 +31,6 @@ with open("resultats_doctr.csv", "w", newline="", encoding="utf-8") as f:
                     for line in block["lines"]:
                         texte += " ".join(word["value"] for word in line["words"]) + " "
 
-            writer.writerow([image, round(end-start,2), texte])
+            writer.writerow([image, round(end - start, 2), texte])
 
 print("Terminé : resultats_doctr.csv")
